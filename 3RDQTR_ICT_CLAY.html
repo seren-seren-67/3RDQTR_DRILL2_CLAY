@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=!, initial-scale=1.0">
+        <title>practice activity</title>
+<style>
+
+body{
+font-family: 'Times New Roman', Times, serif;
+background: grey;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+form {
+background-color: plum;
+padding: 30px 25px;
+border-radius: 10px;
+width: 320px;
+}
+label{
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+}
+.form-control{
+width: 100%;
+padding: 12px;
+border: 1px solid purple;
+border-radius: 6px;
+box-sizing: border-box;
+}
+button{
+width: 100%;
+padding: 12px;
+border-radius: 6px;
+background-color: purple;
+color: white;
+font-size: 16px;
+cursor: pointer;
+}
+#result{
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    background-color: plum;
+}
+
+
+
+</style>
+
+    </head>
+    <body>
+      <form>
+<label>ENTER FIRST NUMBER:</label>
+<input type="number" class="form-control" id="num1">
+
+
+<label>ENTER SECOND NUMBER:</label>
+<input type="number" class="form-control" id="num2">
+<br>
+<button type="button" class="btn btn-sucess" onclick="sapphire()">CLICK FOR ANSWER</button>
+<div id="result"> Answer Will Show Here </div>
+
+
+      </form>  
+<script>
+    function sapphire(){
+        let sap1= document.getElementById("num1").value;
+        let sap2= document. getElementById ("num2").value;
+        let ops=Number(sap1)-Number (sap2);
+        
+        document.getElementById("result").innerHTML=" The difference is " +ops;
+    }
+</script>
+
+
+    </body>
+    </html>
+       
